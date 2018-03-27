@@ -1,6 +1,15 @@
 <template>
   <div class="hello">
-    <div class='container-fluid filter-container'>
+    <div class='container-fluid header'>
+      <div class='row text-center'>
+        <div class='col-12'>
+          <!-- <img class='logo' src='../assets/logo.jpg' /> -->
+          <!-- <h1>Ologies the Podcast</h1> -->
+        </div>
+      </div>
+    </div>
+
+    <div class=''>
       <div class='row filters'>
         <div class='col-12'>
           <input type='text' class='search form-control' placeholder='Search' v-model='searchTerm' />
@@ -127,8 +136,27 @@ export default {
     margin-bottom: 2em;
   }
 
+  .logo {
+    width: 125px;
+    height: 125px;
+    margin-bottom: 1em;
+  }
+
+  .header {
+    background-image: url('https://cdn.shopify.com/s/files/1/2384/1915/files/OLOGIESTITLESLIDEwithmushroom_2048x.png?v=1517064763');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-color: #FAF4DC;
+    margin-bottom: 1em;
+  }
+
   .search {
     border: none;
+    box-shadow: 0 4px 30px 0 rgba(223,225,230,0.5);
+    padding: 1em;
+    font-size: 22px;
   }
 
   .filter-container {
